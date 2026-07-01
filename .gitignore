@@ -1,0 +1,5 @@
+DotNet-FullStack-Kickstart/backend/bin/
+DotNet-FullStack-Kickstart/backend/obj/
+DotNet-FullStack-Kickstart/frontend/node_modules/
+DotNet-FullStack-Kickstart/frontend/dist/
+DotNet-FullStack-Kickstart/frontend/.vscode/
