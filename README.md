@@ -28,8 +28,8 @@ cd DotNet-FullStack-Kickstart/backend
 dotnet run
 ```
 
-The API will start on `https://localhost:5001` (or the port shown in your terminal).  
-Swagger UI is available at `https://localhost:5001/swagger` in development mode.
+The API will start on `http://localhost:5214` and `https://localhost:7152` by default (or the port shown in your terminal).  
+Swagger UI is available at `https://localhost:7152/swagger` in development mode.
 
 ### 3. Run the Frontend (Vue 3 + Vite)
 
@@ -67,5 +67,7 @@ Open that URL in your browser to use the app.
 
 ## Notes
 
-- The backend uses an **in-memory database**, so all data is reset on restart.
+- The backend now uses **Microsoft SQL Server** via the `DefaultConnection` connection string in `DotNet-FullStack-Kickstart/backend/appsettings*.json`.
+- If your SQL Server instance is different, update `ConnectionStrings:DefaultConnection` before running the backend.
+- You can override the frontend API target with `VITE_API_BASE_URL` (default is `http://localhost:5214/api/todo`).
 - CORS is configured to allow requests from `http://localhost:5173` (the Vite dev server).

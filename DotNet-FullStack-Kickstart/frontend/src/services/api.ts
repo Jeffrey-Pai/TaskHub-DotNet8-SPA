@@ -6,7 +6,7 @@ export interface TodoItem {
   createdAt: string
 }
 
-const apiBaseUrl = import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:5000/api/todo'
+const apiBaseUrl = import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:5214/api/todo'
 
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
   const response = await fetch(`${apiBaseUrl}${path}`, {
